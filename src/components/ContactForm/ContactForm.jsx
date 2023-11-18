@@ -2,7 +2,6 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
 import { getContacts } from 'redux/selectors';
-import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 
 const ContactForm = () => {
@@ -73,12 +72,6 @@ const ContactForm = () => {
       </button>
     </form>
   );
-};
-
-ContactForm.propTypes = {
-  handleAddContact: PropTypes.func,
-  name: PropTypes.string,
-  number: PropTypes.string,
 };
 
 export default ContactForm;

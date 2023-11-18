@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { getFilter } from 'redux/selectors';
 import { setFilter } from 'redux/filterSlice';
-import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
 const Filter = () => {
@@ -26,11 +25,6 @@ const Filter = () => {
       />
     </label>
   );
-};
-
-Filter.propTypes = {
-  filter: PropTypes.string,
-  changeInputFilter: PropTypes.func,
 };
 
 export default Filter;

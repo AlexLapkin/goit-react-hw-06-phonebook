@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contactsSlice';
 import css from './ContactList.module.css';
-import PropTypes from 'prop-types';
 import { getContacts, getFilter } from 'redux/selectors';
 
 const ContactList = () => {
@@ -35,11 +34,6 @@ const ContactList = () => {
       ))}
     </ul>
   );
-};
-
-ContactList.propTypes = {
-  contacts: PropTypes.array,
-  handleDeleteContact: PropTypes.func,
 };
 
 export default ContactList;
