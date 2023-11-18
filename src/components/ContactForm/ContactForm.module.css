@@ -1,7 +1,6 @@
 .contact_form_cont {
     display: flex;
     flex-direction: column;
-    
     padding-bottom: 20px;
     width: 300px;
     align-items: center;
@@ -9,8 +8,7 @@
     }
 
 .contact_form_inp {
-   
-    width: 200px;
+   width: 200px;
    height: 25px;
    border: none;
 }
