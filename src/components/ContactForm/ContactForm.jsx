@@ -1,4 +1,4 @@
-//import { getContacts } from 'redux/selectors';
+import { getContacts } from 'redux/selectors';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
@@ -6,8 +6,7 @@ import css from './ContactForm.module.css';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contactsStore.contacts);
-  //const contacts = useSelector(getContacts);
+  const contacts = useSelector(getContacts);
   console.log(contacts);
 
   // Функція додавання контакту
