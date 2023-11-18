@@ -4,7 +4,6 @@ const initialState = {
     contacts: [],
 };
 
-
 const contactsSlice = createSlice({
     // Ім'я слайсу
     name: "contacts",
