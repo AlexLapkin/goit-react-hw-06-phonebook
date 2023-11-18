@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const contactsInitialState = [];
+
 const contactsSlice = createSlice({
     // Ім'я слайсу
     name: "contacts",
     // Початковий стан редюсера слайсу
-    initialState: [],
+    initialState: contactsInitialState,
     // Об'єкт редюсерів
     reducers: {
         addContact(state, {payload}) { state.contacts = [...state.contacts, payload]; },

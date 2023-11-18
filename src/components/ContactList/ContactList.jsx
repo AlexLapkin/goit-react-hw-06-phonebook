@@ -8,6 +8,7 @@ const ContactList = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
   console.log(contacts);
+  console.log(filter);
 
   // Функція фільтраціі контакту за іменем
   const findContactsByName = () => {
