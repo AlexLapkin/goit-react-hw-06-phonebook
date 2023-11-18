@@ -1,22 +1,20 @@
-import { getContacts, getFilter } from 'redux/selectors';
+import { getFilter } from 'redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact } from 'redux/contactsSlice';
 import css from './ContactList.module.css';
 
 const ContactList = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(getContacts);
+  //const contacts = useSelector(getContacts);
+  const contacts = useSelector(state => state.contactsStore.contacts);
   const filter = useSelector(getFilter);
   console.log(contacts);
   console.log(filter);
 
   // Функція фільтраціі контакту за іменем
   const findContactsByName = () => {
-    return (
-      contacts !== undefined &&
-      contacts.filter(contact =>
-        contact.name.toLowerCase().includes(filter.toLowerCase())
-      )
+    return contacts.filter(contact =>
+      contact.name.toLowerCase().includes(filter.toLowerCase())
     );
   };
 
