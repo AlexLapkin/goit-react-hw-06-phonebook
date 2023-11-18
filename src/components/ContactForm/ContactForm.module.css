@@ -26,3 +26,8 @@
     color: white;
     border: none;
 }
+
+.contact_form_btn:hover,
+.contact_form_btn:focus {
+    background-color: blueviolet;
+}

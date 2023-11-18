@@ -8,11 +8,12 @@
     padding-bottom: 5px;
 }
 
+.contacts_item_btn:hover,
+.contacts_item_btn:focus {
+    background-color: brown;
+}
+
 .contacts_item {
     margin-bottom: 15px;
     
-}
-
-.contacts_cont {
-
 }
