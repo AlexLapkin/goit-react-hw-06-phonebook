@@ -7,8 +7,6 @@ const ContactList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
-  console.log(contacts);
-  console.log(filter);
 
   // Функція фільтраціі контакту за іменем
   const findContactsByName = () => {
@@ -19,7 +17,6 @@ const ContactList = () => {
 
   // Масив відфільтрованих контактів
   const filteredContacts = findContactsByName();
-  //console.log(filteredContacts);
 
   return (
     <ul className={css.contacts_cont}>

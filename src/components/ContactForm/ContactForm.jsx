@@ -7,7 +7,6 @@ import css from './ContactForm.module.css';
 const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
-  console.log(contacts);
 
   // Функція додавання контакту
   const handleAddContact = contact => {
