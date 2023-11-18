@@ -22,7 +22,7 @@ const ContactList = () => {
 
   // Масив відфільтрованих контактів
   const filteredContacts = findContactsByName();
-  console.log(filteredContacts);
+  //console.log(filteredContacts);
 
   return (
     <ul className={css.contacts_cont}>
